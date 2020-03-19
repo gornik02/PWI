@@ -13,8 +13,8 @@
 @media(max-width: 768px){
 	.card,
 	.cardA{
-		width: 100px;
-		height: 100px;
+		width: 90px;
+		height: 90px;
 	}
 	#board{
 		width: 450px;
