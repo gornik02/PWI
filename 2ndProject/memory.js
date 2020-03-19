@@ -1,9 +1,7 @@
 
 let cards = ["apple.png", "orange.png", "pear.png", "pear.png", "plum.png", "apple.png", "orange.png", "bananas.png", "plum.png", "strawberry.png", "bananas.png", "strawberry.png"];
 
-//alert(cards[4]);
-
-//console.log(cards);
+const playingCards = getRandomCards();
 
 let c0 = document.getElementById('c0');
 let c1 = document.getElementById('c1');
@@ -41,6 +39,21 @@ let visible_nr;
 let lock = false;
 let pairsLeft = 6;
 
+function getRandomCards() {
+	const cardsArray = [];
+	while(cards.length !== 0) {
+		const randomInt = getRandomInt(cards.length);
+		const randomCard = cards[randomInt];
+		cardsArray.push(randomCard);
+		cards.splice(randomInt, 1);
+	}
+	return cardsArray;
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
 function revealCard(nr)
 {
 	const element = document.getElementById(`c${nr}`);
@@ -51,7 +64,7 @@ function revealCard(nr)
 	{
 		lock = true;
 	
-		let obraz = "url(img/" + cards[nr] + ")";
+		let obraz = "url(img/" + playingCards[nr] + ")";
 
 		element.style.setProperty('background-image', obraz);
 		element.setAttribute('class', 'cardA');
@@ -66,7 +79,7 @@ function revealCard(nr)
 		else
 		{
 			
-			if(cards[visible_nr] == cards[nr])
+			if(playingCards[visible_nr] == playingCards[nr])
 			{
 				
 				setTimeout(function() { hide2Cards(nr, visible_nr) }, 750);

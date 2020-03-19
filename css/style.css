@@ -138,7 +138,6 @@ header a:hover{
 }
 
 #boxes .box img{
-  position:sticky;
   width:90px;
   transition-property: width;
 }
