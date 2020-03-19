@@ -11,7 +11,11 @@
 }
 
 @media(max-width: 768px){
-	
+	.card,
+	.cardA{
+		width: 100px;
+		height: 100px;
+	}
 	#board{
 		width: 450px;
 	}
