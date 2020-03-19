@@ -71,7 +71,7 @@ function revealCard(nr)
 		
 		if(oneVisible == false)
 		{
-			
+			element.style.setProperty('pointer-events', 'none');
 			oneVisible = true;
 			visible_nr = nr;
 			lock = false;
@@ -122,10 +122,12 @@ function restore2Cards(nr1, nr2)
 {
 	const element1 = document.getElementById(`c${nr1}`);
 	element1.style.setProperty('background-image', 'url(img/card.png)');
+	element1.style.setProperty('pointer-events', 'auto');
 	element1.setAttribute('class', 'card');
 
 	const element2 = document.getElementById(`c${nr2}`);
 	element2.style.setProperty('background-image', 'url(img/card.png)');
+	element2.style.setProperty('pointer-events', 'auto');
 	element2.setAttribute('class', 'card');
 
 	lock = false;
