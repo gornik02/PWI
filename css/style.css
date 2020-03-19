@@ -37,6 +37,8 @@ ul{
 
 /* Header **/
 header{
+  position: sticky;
+  top: 0;
   background:#3a4044;
   color:#ffffff;
   padding-top:30px;
@@ -136,6 +138,7 @@ header a:hover{
 }
 
 #boxes .box img{
+  position:sticky;
   width:90px;
   transition-property: width;
 }
@@ -172,8 +175,6 @@ ul#services li{
 }
 
 footer{
-  position: fixed;
-  bottom: 0px;
   width: 100%;
   padding:10px 0px;
   color:#ffffff;
