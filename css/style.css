@@ -37,6 +37,7 @@ ul{
 
 /* Header **/
 header{
+  width:100%;
   position: sticky;
   top: 0;
   background:#3a4044;
