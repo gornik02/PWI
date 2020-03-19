@@ -10,6 +10,12 @@
 	color: #837e3f;
 }
 
+@media(max-width: 768px){
+	#board{
+	  width: 500px;
+	}
+}
+
 .cardA
 {
 	width: 125px;
