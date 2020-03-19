@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="author" content="Gabriel Radzięta">
+		<meta name="description" content="Small memory game">
+		<meta name="keywords" content="Memory Game">
+		<title>Gabriel Radzięta PWI | Memory Game</title>
+		<meta name="description" content="Memory Game">
+		<link rel="stylesheet" href="game.css">
+		<link rel="stylesheet" href="../css/style.css">
 
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-	<title>Gabriel Radzięta PWI | Memory Game</title>
-	<meta name="description" content="Memory Game">
-	
-	<link rel="stylesheet" href="game.css">
-	<link rel="stylesheet" href="../css/style.css">
+	</head>
 
-</head>
-
-<body>
-	<header>
-		<div class="container">
-			<div id="branding">
-			  <h1>Memory Game</h1>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+				<h1>Memory Game</h1>
+				</div>
+				<nav>
+				<ul>
+					<li class="current"><a href="../index.html">Home</a></li>
+				</ul>
+				</nav>
 			</div>
-			<nav>
-			  <ul>
-				<li class="current"><a href="../index.html">Home</a></li>
-			  </ul>
-			</nav>
+		</header>
+			
+		<div id="board">
+		
+			<div class="card" id="c0"></div>
+			<div class="card" id="c1"></div>
+			<div class="card" id="c2"></div>
+			<div class="card" id="c3"></div>
+			
+			<div class="card" id="c4"></div>
+			<div class="card" id="c5"></div>
+			<div class="card" id="c6"></div>
+			<div class="card" id="c7"></div>
+			
+			<div class="card" id="c8"></div>
+			<div class="card" id="c9"></div>
+			<div class="card" id="c10"></div>
+			<div class="card" id="c11"></div>
+			
+			<div id="score">Turn counter: 0</div>
+		
 		</div>
-	</header>
-		
-	<div id="board">
-	
-		<div class="card" id="c0"></div>
-		<div class="card" id="c1"></div>
-		<div class="card" id="c2"></div>
-		<div class="card" id="c3"></div>
-		
-		<div class="card" id="c4"></div>
-		<div class="card" id="c5"></div>
-		<div class="card" id="c6"></div>
-		<div class="card" id="c7"></div>
-		
-		<div class="card" id="c8"></div>
-		<div class="card" id="c9"></div>
-		<div class="card" id="c10"></div>
-		<div class="card" id="c11"></div>
-		
-		<div id="score">Turn counter: 0</div>
-	
-	</div>
 
-	<footer>
-		<p>Gabriel Radzięta PWI Projects, Copyright &copy; 2020</p>
-	</footer>
-	
-	<script src="memory.js"></script>
-	
-</body>
+		<footer>
+			<p>Gabriel Radzięta PWI Projects, Copyright &copy; 2020</p>
+		</footer>
+		
+		<script src="memory.js"></script>
+		
+	</body>
 </html>
