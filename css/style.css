@@ -84,7 +84,7 @@ header a:hover{
 #showcase{
   min-height:400px;
   background:url('../img/space.jpg') 0 -400px;
-  background-repeat: repeat-x;
+  background-repeat: repeat-x, repeat-y;
   text-align:center;
   color:#ffffff;
 }
