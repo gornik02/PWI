@@ -1,9 +1,26 @@
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+}
+
 body{
+  height: 100%;
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
   background-color: #232527;
   color: #ffffff;
+}
+
+main {
+  min-height: 100%;
+}
+
+main:after {
+  display: block;
+  height: 50px;
 }
 
 /* Global */
@@ -128,24 +145,32 @@ header a:hover{
 
 /* Boxes */
 #boxes{
-  margin:10px 0px;
+  margin:10px auto;
 }
 
 #boxes .box{
   float:left;
   text-align: center;
   width:30%;
-  padding:10px;
+  padding:30px 10px;
   min-height: 120px;
 }
 
+#boxes .box .box_picture_overlay{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
 #boxes .box img{
-  width:90px;
+  width: 90px;
   transition-property: width;
+  margin: auto;
 }
 
 #boxes .box img:hover{
   width:100px;
+  margin: auto;
 }
 
 /* Sidebar */
@@ -176,11 +201,14 @@ ul#services li{
 }
 
 footer{
-  width: 100%;
   padding:10px 0px;
   color:#ffffff;
   background-color:#3a4044;
   text-align: center;
+  clear: both;
+  position: relative;
+  height: 50px;
+  margin-top: -50px;
 }
 
 /* Media Queries */
