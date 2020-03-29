@@ -1,0 +1,25 @@
+#boxes{
+    margin:10px auto;
+    .box{
+        float:left;
+        text-align: center;
+        width:30%;
+        padding:30px 10px;
+        min-height: 120px;
+        .box_picture_overlay {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+        }
+        img{
+            width: 90px;
+            transition-property: width;
+            margin: auto;
+        }
+        img:hover{
+            width:100px;
+            margin: auto;
+        }
+    }
+
+}

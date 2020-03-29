@@ -1,0 +1,43 @@
+@import './variables';
+
+header {
+    z-index: 1;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: $darkGrayColor;
+    color:#ffffff;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:#0f2f42 3px solid;
+    li {
+        display:inline;
+        padding: 0 20px 0 20px;
+    }
+    #branding {
+        float:left;
+        h1 {
+            margin:0;
+        }
+        .highlight {
+            color: $goldColor;
+            font-weight:bold;
+        }
+    }
+    nav {
+        float:right;
+        margin-top:10px;
+    }
+    .current {
+        a {
+            text-decoration: none;
+            color: $goldColor;
+            font-weight:bold;
+            text-transform: uppercase;
+            font-size:16px;
+            &:hover {
+                color:#cccccc;
+            }
+        }
+    }
+}
