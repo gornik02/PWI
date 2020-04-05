@@ -8,8 +8,10 @@
 	  <meta name="keywords" content="PWI Projects">
     <title>Gabriel Radzięta PWI | Welcome</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./2ndProject/game.css">
+    <script type="text/javascript" src="app.js"></script>
   </head>
-  <body>
+  <body onload="showHome()">
     <main>
       <header>
         <div class="container">
@@ -18,54 +20,77 @@
           </div>
           <nav>
             <ul>
-              <li class="current"><a href="index.html">Home</a></li>
+              <li class="current"><a href="#" onclick="showHome()">Home</a></li>
             </ul>
           </nav>
         </div>
       </header>
-
-      <section id="showcase">
-        <div class="container">
-          <h1>PWI projects will appear on this website</h1>
-          <p>Projects are listed below.</p>
-        </div>
-      </section>
-
-      <section id="newsletter">
-        <div class="container">
-          <h1>Subscribe To Our Newsletter</h1>
-          <form>
-            <input type="email" placeholder="Enter Email...">
-            <button type="submit" class="button_1">Subscribe</button>
-          </form>
-        </div>
-      </section>
-
-      <section id="boxes">
-        <div class="container">
-          <div class="box">
-            <div class="box_picture_overlay">
-              <a href="2ndProject/memory.html"><img src="./img/memory.png" alt="Memory Game"></a>
-            </div>
-            <h3>2nd Project</h3>
-            <p>Small memory game.</p>
+      
+      <div id="home">
+        <section id="showcase">
+          <div class="container">
+            <h1>PWI projects will appear on this website</h1>
+            <p>Projects are listed below.</p>
           </div>
-          <div class="box">
-            <div class="box_picture_overlay">
-              <img src="./img/next_project.png" alt="Next">
-            </div>
-            <h3>3rd Project</h3>
-            <p>Coming Soon</p>
+        </section>
+
+        <section id="newsletter">
+          <div class="container">
+            <h1>Subscribe To Our Newsletter</h1>
+            <form>
+              <input type="email" placeholder="Enter Email...">
+              <button type="submit" class="button_1">Subscribe</button>
+            </form>
           </div>
-          <div class="box">
-            <div class="box_picture_overlay">
-              <img src="./img/next_project.png" alt="Next">
+        </section>
+
+        <section id="boxes">
+          <div class="container">
+            <div class="box">
+              <div class="box_picture_overlay">
+                <a href="#" onclick="showBoard()"><img src="./img/memory.png" alt="Memory Game"></a>
+              </div>
+              <h3>2nd Project</h3>
+              <p>Small memory game.</p>
             </div>
-            <h3>4th Project</h3>
-            <p>Coming Soon</p>
+            <div class="box">
+              <div class="box_picture_overlay">
+                <img src="./img/next_project.png" alt="Next">
+              </div>
+              <h3>3rd Project</h3>
+              <p>Coming Soon</p>
+            </div>
+            <div class="box">
+              <div class="box_picture_overlay">
+                <img src="./img/next_project.png" alt="Next">
+              </div>
+              <h3>4th Project</h3>
+              <p>Coming Soon</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+      
+      <div id="board">
+        <div class="card" id="c0"></div>
+        <div class="card" id="c1"></div>
+        <div class="card" id="c2"></div>
+        <div class="card" id="c3"></div>
+        
+        <div class="card" id="c4"></div>
+        <div class="card" id="c5"></div>
+        <div class="card" id="c6"></div>
+        <div class="card" id="c7"></div>
+        
+        <div class="card" id="c8"></div>
+        <div class="card" id="c9"></div>
+        <div class="card" id="c10"></div>
+        <div class="card" id="c11"></div>
+        
+        <div id="score">Turn counter: 0</div>
+        <script src="./2ndProject/memory.js"></script>
+      </div>
+
     </main>
     <footer>
       <p>Gabriel Radzięta PWI Projects, Copyright &copy; 2020</p>

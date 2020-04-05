@@ -64,7 +64,7 @@ function revealCard(nr)
 	{
 		lock = true;
 	
-		let obraz = "url(img/" + playingCards[nr] + ")";
+		let obraz = "url(2ndProject/img/" + playingCards[nr] + ")";
 
 		element.style.setProperty('background-image', obraz);
 		element.setAttribute('class', 'cardA');
@@ -121,12 +121,12 @@ function hide2Cards(nr1, nr2)
 function restore2Cards(nr1, nr2)
 {
 	const element1 = document.getElementById(`c${nr1}`);
-	element1.style.setProperty('background-image', 'url(img/card.png)');
+	element1.style.setProperty('background-image', 'url(2ndProject/img/card.png)');
 	element1.style.setProperty('pointer-events', 'auto');
 	element1.setAttribute('class', 'card');
 
 	const element2 = document.getElementById(`c${nr2}`);
-	element2.style.setProperty('background-image', 'url(img/card.png)');
+	element2.style.setProperty('background-image', 'url(2ndProject/img/card.png)');
 	element2.style.setProperty('pointer-events', 'auto');
 	element2.setAttribute('class', 'card');
 
